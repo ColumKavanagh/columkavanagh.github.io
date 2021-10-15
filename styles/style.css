@@ -1,0 +1,126 @@
+body{
+	background-color: #FBF3EB;
+	font-family: Arial;
+	text-align: center;
+}
+.nav-container{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+.nav{
+	border-left: 4px solid #485145;
+	margin: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 200%;
+	color:#ffffff;
+}
+h1, h2, h3{
+	text-shadow: 2px 2px #C1DEBA;
+	font-size: 200%;
+	margin-top: 2cm;
+}
+h1,h2 {
+	text-decoration: underline;
+}	
+p.intro {
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+	font-size: 200%;
+	color: #485145;
+}
+ul {
+	display: inline-block;
+	text-align: left;
+	list-style: none;
+}
+ul li::before{
+	color:#C1DEBA;
+	content: "\2606";
+}
+.emphasis{
+	font-weight: bold;
+	text-decoration: underline;
+}
+.quicklinkBox{
+	width: 300px;
+	height: 100px;
+	background-color: #C1DEBA;
+	margin: 5px;
+	padding-top: 40px;
+	padding-bottom: 10px;
+}
+.quicklinkBox2{
+	width: 330px;
+	height: 100px;
+	background-color: #C1DEBA;
+	margin: 5px;
+	padding-top: 40px;
+}
+.quicklinkText{
+	width: 60%;
+	font-size: 150%;
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+.quicklinkText:hover{
+	color: #FBF3EB;
+}
+#EducationText{
+	margin: 40px;
+	padding: 10px;
+	text-align: left;
+}
+#WorkText{
+	margin: 40px;
+	padding: 10px;
+	padding-left: 20px;
+	border: 3px dashed #485145;
+	text-align: left;
+}
+#SkillsText{
+	margin: 40px;
+	margin-left: 100px;
+	padding: 10px;
+	text-align: left;
+	font-size: 150%;
+}
+#container-1{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+#container-2{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+#quicklinkHeading{
+	text-decoration:none;
+}
+@media screen and (max-width: 600px){
+	body{
+		background-color: #C1DEBA;
+		}
+	h1, h2, h3{
+	text-shadow: 2px 2px #FBF3EB;
+		}	
+	.quicklinkBox, .quicklinkBox2{
+	background-color: #FBF3EB;
+		}
+	.quicklinkText:hover{
+	color: #C1DEBA;
+	}
+	ul li::before{
+	color:#FBF3EB;
+		}
+	#WorkText{
+		border: 1.5px dashed #FBF3EB;
+		}
+}
+

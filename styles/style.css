@@ -3,6 +3,11 @@ body{
 	font-family: Arial;
 	text-align: center;
 }
+.row{
+	justify-content:space-around;
+	margin: 10px;
+	align-items: center;
+}
 .nav-container{
 	display: flex;
 	flex-direction: row;
@@ -19,15 +24,14 @@ body{
 h1, h2, h3{
 	text-shadow: 2px 2px #C1DEBA;
 	font-size: 200%;
-	margin-top: 2cm;
+	margin-top: 1cm;
 }
 h1,h2 {
 	text-decoration: underline;
 }	
-p.intro {
+.intro {
 	margin-left: auto;
 	margin-right: auto;
-	width: 900px;
 	font-size: 200%;
 	color: #485145;
 }
@@ -45,19 +49,14 @@ ul li::before{
 	text-decoration: underline;
 }
 .quicklinkBox{
-	width: 300px;
-	height: 100px;
 	background-color: #C1DEBA;
 	margin: 5px;
-	padding-top: 40px;
-	padding-bottom: 10px;
+	padding: 10px;	
 }
 .quicklinkBox2{
-	width: 330px;
-	height: 100px;
 	background-color: #C1DEBA;
 	margin: 5px;
-	padding-top: 40px;
+	padding: 10px;
 }
 .quicklinkText{
 	width: 60%;
@@ -73,11 +72,11 @@ ul li::before{
 	margin: 40px;
 	padding: 10px;
 	text-align: left;
+	font-size: 150%;
 }
 #WorkText{
 	margin: 40px;
 	padding: 10px;
-	padding-left: 20px;
 	border: 3px dashed #485145;
 	text-align: left;
 }
@@ -94,30 +93,27 @@ ul li::before{
 	justify-content: center;
 	flex-wrap: wrap;
 }
-#container-2{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-}
 #quicklinkHeading{
 	text-decoration:none;
 }
 @media screen and (max-width: 600px){
+	.row{
+		align-items: center;
+	}
 	body{
 		background-color: #C1DEBA;
 		}
 	h1, h2, h3{
-	text-shadow: 2px 2px #FBF3EB;
+		text-shadow: 2px 2px #FBF3EB;
 		}	
 	.quicklinkBox, .quicklinkBox2{
-	background-color: #FBF3EB;
+		background-color: #FBF3EB;
 		}
 	.quicklinkText:hover{
-	color: #C1DEBA;
-	}
+		color: #C1DEBA;
+		}
 	ul li::before{
-	color:#FBF3EB;
+		color:#FBF3EB;
 		}
 	#WorkText{
 		border: 1.5px dashed #FBF3EB;
